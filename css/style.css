@@ -9805,3 +9805,18 @@ textarea.form-control {
   font-weight: 600;
   margin: 0;
 }
+/* =========================================
+   MOBILE HERO IMAGE SAFE FIX
+   (NO HTML / NO JS CHANGE)
+========================================= */
+
+@media (max-width: 768px) {
+
+  /* Hero image container */
+  #home-section .one-third.img {
+    background-size: contain !important;
+    background-position: center top !important;
+    background-repeat: no-repeat !important;
+  }
+
+}
