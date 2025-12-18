@@ -9914,3 +9914,31 @@ textarea.form-control {
     transform: none !important;
   }
 }
+/* =========================================
+   MOBILE HERO IMAGE – CLEAN FIX
+========================================= */
+
+.hero-mobile-img {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  .hero-mobile-img {
+    display: block;
+    max-width: 280px;
+    margin: 40px auto 0;
+    position: relative;
+    z-index: 2;
+  }
+
+  #home-section .one-third.img {
+    background-image: none !important;
+    height: auto !important;
+    min-height: auto !important;
+  }
+
+  .js-fullheight {
+    height: auto !important;
+  }
+}
