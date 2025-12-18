@@ -9871,3 +9871,46 @@ textarea.form-control {
     transform: none !important;
   }
 }
+/* =========================================
+   MOBILE HERO IMAGE – HARD FORCE FIX
+========================================= */
+
+@media (max-width: 768px) {
+
+  /* Stop owl & js-fullheight from forcing height */
+  html, body {
+    overflow-x: hidden;
+  }
+
+  .js-fullheight,
+  .owl-stage,
+  .owl-stage-outer,
+  .owl-item,
+  .slider-item,
+  #home-section {
+    height: auto !important;
+    min-height: auto !important;
+  }
+
+  /* TARGET THE EXACT HERO IMAGE DIV */
+  #home-section .one-third.img {
+    height: 320px !important;
+    width: 100% !important;
+
+    background-size: contain !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+
+    transform: none !important;
+  }
+
+  /* Disable owl translate / scaling */
+  .owl-carousel .owl-item {
+    transform: none !important;
+  }
+
+  /* Remove overlay scaling */
+  #home-section .overlay {
+    transform: none !important;
+  }
+}
