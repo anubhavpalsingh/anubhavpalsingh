@@ -9844,3 +9844,30 @@ textarea.form-control {
     padding-bottom: 40px;
   }
 }
+/* ================================
+   MOBILE HERO IMAGE – FORCE FIX
+================================ */
+
+@media (max-width: 768px) {
+
+  /* Disable JS forced full height */
+  .js-fullheight {
+    height: auto !important;
+    min-height: auto !important;
+  }
+
+  /* Hero image container */
+  .one-third.img {
+    height: 360px !important;
+    background-size: contain !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+  }
+
+  /* Prevent transform / translate issues */
+  .slider-item,
+  .one-third,
+  .img {
+    transform: none !important;
+  }
+}
